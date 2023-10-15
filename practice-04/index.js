@@ -3,7 +3,10 @@
 function generateArray(n, m, count) {
     let array = [];
     for (let i = 0; i < count; ++i) {
-        let randomNumber = Math.min(n, m) + Math.round(Math.random() * Math.abs(m - n));
+        let range = Math.abs(m - n);
+        let numberInRange = Math.round(Math.random() * range);
+        let min = Math.min(n, m);
+        let randomNumber = min + numberInRange;
         array.push(randomNumber);
     }
 
@@ -23,7 +26,10 @@ function mixArray(count) {
         array.push(i);
     }
     for (let i = 0; i < count; ++i) {
-        let j = Math.min(0, count - 1) + Math.round(Math.random() * Math.abs(count - 1));
+        let range = Math.abs(count - 1);
+        let numberInRange = Math.round(Math.random() * range)
+        let min = Math.min(0, count - 1);
+        let j = min + numberInRange;
         let temp = array[i];
         array[i] = array[j];
         array[j] = temp;
