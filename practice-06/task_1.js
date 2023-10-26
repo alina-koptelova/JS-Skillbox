@@ -19,15 +19,8 @@ console.log(result);
 // Задача 2
 
 function getOlderUserArray(users) {
-    let olderUser = null;
-
-    for (let i = 0; i < users.length; ++i) {
-        if (olderUser === null || users[i].age > olderUser.age) {
-            olderUser = users[i];
-        }
-    }
-
-    return olderUser.name;
+    users.sort((a, b) => b.age - a.age);
+    return users[0].name;
 }
 
 let allUsers = [

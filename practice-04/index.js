@@ -49,14 +49,8 @@ console.log(array_3);
 // Задача 3
 
 function findIndex(array, n) {
-    let index = -1;
-
-    for (let i in array) {
-        if (array[i] === n) {
-            index = i;
-            break;
-        }
-    }
+    let index = array.findIndex((element) => element === n);
+    
     if (index === -1) {
         console.log('Элемент не найден');
     } else {
@@ -71,11 +65,7 @@ findIndex(array_3, 7);
 // Задача 4
 
 function joinArrays(arr1, arr2) {
-    for (let i in arr2) {
-        arr1.push(arr2[i]);
-    }
-
-    console.log(arr1);
+    console.log(arr1.concat(arr2));
 }
 
 joinArrays([2, 2, 17, 21, 45, 12, 54, 31, 53], [12, 44, 23, 5]);

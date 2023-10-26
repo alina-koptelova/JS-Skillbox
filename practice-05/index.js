@@ -13,15 +13,7 @@ console.log(getAge(2007)); // 16
 // Задача 2
 
 function filter(whiteEmailsList, blackEmailsList) {
-    let filteredList = [];
-
-    for (let i = 0; i < whiteEmailsList.length; ++i) {
-        if (!blackEmailsList.includes(whiteEmailsList[i])) {
-            filteredList.push(whiteEmailsList[i]);
-        }
-    }
-
-    return filteredList;
+    return whiteEmailsList.filter(el => !blackEmailsList.includes(el));
 }
 
 let whiteList = ['my-email@gmail.ru', 'jsfunc@mail.ru', 'annavkmail@vk.ru', 'fullname@skill.ru',
@@ -33,19 +25,21 @@ console.log(result);
 // Задача 3
 
 function arrSort(arr) {
-    for (let i = 0; i < arr.length; ++i) {
-        for (let j = 0; j < arr.length - 1; ++j) {
-            if (arr[j] > arr[j + 1]) {
-                let temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-    }
+    // for (let i = 0; i < arr.length; ++i) {
+    //     for (let j = 0; j < arr.length - 1; ++j) {
+    //         if (arr[j] > arr[j + 1]) {
+    //             let temp = arr[j];
+    //             arr[j] = arr[j + 1];
+    //             arr[j + 1] = temp;
+    //         }
+    //     }
+    // }
 
+    // console.log(arr);
+    arr.sort((a, b) => a - b);
     console.log(arr);
 }
 
-arrSort([2,5,1,3,4]);
-arrSort([12,33,3,44,100]);
-arrSort([0,1]);
+arrSort([2, 5, 1, 3, 4]);
+arrSort([12, 33, 3, 44, 100]);
+arrSort([0, 1]);

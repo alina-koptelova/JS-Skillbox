@@ -1,15 +1,7 @@
 // Задача 3
 
 function filter(objects, property, value) {
-    let filteredArray = [];
-
-    for (let object of objects) {
-        if (object[property] === value) {
-          filteredArray.push(object);
-        }
-    }
-    
-    return filteredArray;
+    return objects.filter(object => object[property] === value);
 }
 
 let objects = [
