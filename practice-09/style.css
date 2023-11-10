@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    padding: 30px;
+    background-color: rgb(247, 152, 152);
+    font-size: 0;
+    color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.card:hover {
+    background-color: rgb(247, 190, 190);
+}
+
+.card:active {
+    background-color: rgb(235, 113, 113);
+}
+
+.open {
+    font-size: 36px;
+    color: white;
+    background-color: rgb(134, 150, 240);
+    cursor: default;
+}
+
+.open:hover{
+    background-color: rgb(181, 190, 241);
+}
+
+.open:active{
+    background-color: rgb(91, 111, 219);
+}
+
+.success {
+    font-size: 36px;
+    color: white;
+    background-color: #56c95a;
+    cursor: default;
+}
+
+.success:hover{
+    background-color: #7bdb7e;
+}
+
+.success:active{
+    background-color: #35b139;
+}
+
+form {
+    height: 100px;
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgb(204, 70, 70);
+    background-color: rgb(243, 241, 241);
+    padding: 30px 30px;
+    border-radius: 8px;
+}
+
+input {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(204, 70, 70);
+    font-weight: 700;
+    font-size: 12px;
+    border: 1px solid rgb(219, 155, 155);
+    border-radius: 8px;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(204, 70, 70);
+    background-color: white;
+    border: 1px solid rgb(212, 210, 210);
+    width: 120px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+button:active {
+    background-color: rgb(212, 210, 210);
+}
