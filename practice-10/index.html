@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <h1>Список студентов</h1>
+    <div class="forms">
+        <form class="add-student-form" method="POST">
+            <label class="add-form-cell">Фамилия:
+                <input type="text" class="lastname" required>
+            </label>
+            <label class="add-form-cell">Имя:
+                <input type="text" class="name" required>
+            </label>
+            <label class="add-form-cell">Отчество:
+                <input type="text" class="surname" required>
+            </label>
+            <label class="add-form-cell">Дата рождения:
+                <input type="date" class="birthday" min="1900-01-01" required>
+            </label>
+            <label class="add-form-cell">Год начала обучения:
+                <input type="number" class="start-year" min="2000" required>
+            </label>
+            <label class="add-form-cell">Факультет:
+                <input type="text" class="faculty" required>
+            </label>
+            <button class="add-student-button" type="submit">Добавить студента</button>
+        </form>
+        <form class="filter-form">
+            <h2>Фильтр</h2>
+            <label class="filter-form-line">По Ф.И.О.:
+                <input type="text" class="name-filter">
+            </label>
+            <label class="filter-form-line">По факультету:
+                <input type="text" class="faculty-filter">
+            </label>
+            <label class="filter-form-line">По году начала обучения:
+                <input type="text" class="start-year-filter">
+            </label>
+            <label class="filter-form-line">По году окончания обучения:
+                <input type="text" class="finish-year-filter">
+            </label>
+            <div class="filter-form-buttons">
+                <button class="apply-filter" type="submit">Применить фильтр</button>
+                <button class="reset-filter" type="reset">Сбросить фильтр</button>
+            </div>
+        </form>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th name="name">Ф.И.О. студента</th>
+                <th name="faculty">Факультет</th>
+                <th name="birthday">Дата рождения, возраст</th>
+                <th name="study-years">Годы обучения, номер курса</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="students-table"></tbody>
+      </table>
+</body>
+</html>

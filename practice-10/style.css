@@ -1,0 +1,94 @@
+body {
+  margin: 3% 5% 7%;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.forms {
+  display: grid;
+  grid-template-columns: 45% 35%;
+  gap: 8%;
+  margin: 25px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-form-cell {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+input {
+  width: 100%;
+  height: 20px;
+  border: 1px solid rgba(159, 159, 159, 0.85);
+  border-radius: 3px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  cursor: pointer;
+  background: rgba(0, 255, 55, 0.4);
+  height: fit-content;
+  padding: 6px 0;
+  border: 0;
+  border-radius: 3px;
+  margin: 8px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+  background: rgba(0, 255, 55, 0.6);
+}
+
+button:active {
+  background: rgba(0, 255, 55, 0.8);
+}
+
+.filter-form-line {
+  display: grid;
+  grid-template-columns: fit-content(170px) auto;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+table {
+  width: 90%;
+  margin-top: 15px;
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+tr {
+  text-align: left;
+  font-size: 18px;
+}
+
+tr:nth-child(2n) {
+  background: #f9f9f9;
+}
+
+.filter-form-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}

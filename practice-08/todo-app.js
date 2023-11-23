@@ -96,7 +96,7 @@
     function addEventListeners(todoItem, todo, listName) {
         todoItem.doneButton.addEventListener('click', () => {
             todoItem.item.classList.toggle('list-group-item-success');
-            todo.done = true;
+            todo.done = !todo.done;
             saveDataToLocalStorage(listName, todos);
         });
         todoItem.deleteButton.addEventListener('click', () => {
