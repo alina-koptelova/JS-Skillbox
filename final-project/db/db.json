@@ -1,0 +1,142 @@
+[
+    {
+        "id": "001",
+        "img": "img/img-001.png",
+        "name": "Кимчи",
+        "price": "200",
+        "category": "Закуски"
+    },
+    {
+        "id": "002",
+        "img": "img/img-002.png",
+        "name": "Битые огурцы",
+        "price": "450",
+        "category": "Закуски"
+    },
+    {
+        "id": "003",
+        "img": "img/img-003.jpg",
+        "name": "Сунде",
+        "price": "710",
+        "category": "Закуски"
+    },
+    {
+        "id": "004",
+        "img": "img/img-004.png",
+        "name": "Токпокки",
+        "price": "670",
+        "category": "Закуски"
+    },
+    {
+        "id": "005",
+        "img": "img/img-005.png",
+        "name": "Кимпаб",
+        "price": "350",
+        "category": "Роллы"
+    },
+    {
+        "id": "006",
+        "img": "img/img-006.jpg",
+        "name": "Кимчи Ролл",
+        "price": "450",
+        "category": "Роллы"
+    },
+    {
+        "id": "007",
+        "img": "img/img-007.jpg",
+        "name": "Ролл с угрем",
+        "price": "470",
+        "category": "Роллы"
+    },
+    {
+        "id": "008",
+        "img": "img/img-008.png",
+        "name": "Рамён",
+        "price": "575",
+        "category": "Супы"
+    },
+    {
+        "id": "009",
+        "img": "img/img-009.png",
+        "name": "Чампон Удон",
+        "price": "740",
+        "category": "Супы"
+    },
+    {
+        "id": "010",
+        "img": "img/img-010.jpg",
+        "name": "Кимчи Тиге",
+        "price": "715",
+        "category": "Супы"
+    },
+    {
+        "id": "011",
+        "img": "img/img-011.jpg",
+        "name": "Хемуль Тан",
+        "price": "850",
+        "category": "Супы"
+    },
+    {
+        "id": "012",
+        "img": "img/img-012.jpg",
+        "name": "Куксу",
+        "price": "610",
+        "category": "Супы"
+    },
+    {
+        "id": "013",
+        "img": "img/img-013.jpg",
+        "name": "Пибимпаб",
+        "price": "670",
+        "category": "Рис"
+    },
+    {
+        "id": "014",
+        "img": "img/img-014.png",
+        "name": "Кимчи Покымпаб",
+        "price": "595",
+        "category": "Рис"
+    },
+    {
+        "id": "015",
+        "img": "img/img-015.jpg",
+        "name": "Чапче",
+        "price": "760",
+        "category": "Лапша"
+    },
+    {
+        "id": "016",
+        "img": "img/img-016.png",
+        "name": "Чачжамён",
+        "price": "635",
+        "category": "Лапша"
+    },
+    {
+        "id": "017",
+        "img": "img/img-017.png",
+        "name": "Соджу",
+        "price": "700",
+        "category": "Напитки"
+    },
+    {
+        "id": "018",
+        "img": "img/img-018.png",
+        "name": "Лимонад",
+        "price": "300",
+        "category": "Напитки"
+    },
+    {
+        "id": "019",
+        "img": "img/img-019.png",
+        "name": "Газировка",
+        "price": "200",
+        "category": "Напитки"
+    },
+    {
+        "id": "020",
+        "img": "img/img-020.png",
+        "name": "Чай",
+        "price": "300",
+        "category": "Напитки"
+    }
+]
